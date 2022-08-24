@@ -55,10 +55,10 @@
 								style="max-width: 20px;" src="icons/Telegram.svg" alt="Написать в Telegram"> @gditaxi</a>
 					</div>
 
-					<!-- <div class="col-6 col-md-3">
+					<div class="col-6 col-md-3">
 						<a href="tel:84957970988" class="xs-visible subheader_phone">+375 44 504 42 18 (А1)</a>
-						<button class="subheader_btn">заказать звонок</button>
-					</div> -->
+						<button class="subheader_btn" data-modal>заказать звонок</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -394,6 +394,47 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal" id="modal-window">
+		<div class="modal_dialog">
+			<div class="modal_content">
+				<form action="#" id="modal-window_form">
+					<div class="modal_close" data-close>&times;</div>
+					<div class="modal_title">Наш менеджер свяжется с вами</div>
+					<input placeholder="Ваше имя" name="name" type="text" class="modal_input">
+					<input placeholder="Ваш телефон" name="phone" type="phone" class="modal_input">
+
+					<button class="modal_btn">Перезвонить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal_mini" id="thanks">
+		<div class="modal_dialog">
+			<div class="modal_content">
+				<div class="modal_close" data-close>&times;</div>
+				<div class="modal_subtitle">Спасибо за вашу заявку!</div>
+				<div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- <div class="modal modal_mini" id="thanks">
+		<div class="modal_close" data-close>&times;</div>
+		<div class="modal_subtitle">Спасибо за вашу заявку!</div>
+		<div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+	</div> -->
+
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 
 	<script src="js/script.js"></script>
 
