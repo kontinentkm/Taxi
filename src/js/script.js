@@ -53,8 +53,10 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-
-
+// ModalThanks
+$('.modal_close').on('click', function() {
+	$('#thanks').fadeOut('slow');
+});
 
 
 function validateForms(form){
